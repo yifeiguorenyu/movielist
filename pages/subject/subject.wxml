@@ -1,0 +1,4 @@
+<view wx:for="{{list}}" class="wrap" bindtap="tap" data-type="{{item.type}}">
+    <image mode="widthFix" src="{{item.url}}" wx:key="{{index}}"></image>
+    <text>{{item.type}}</text>
+</view>

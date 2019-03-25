@@ -1,0 +1,10 @@
+<import src="/common/template/list.wxml" />
+<button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">获取用户信息</button>
+<view>
+    <image src="{{detail.avatarUrl}}"></image>
+    <text>{{detail.nickName}}</text>
+</view>
+
+
+
+  <template is="list-teplate" data="{{list,loading}}"></template>

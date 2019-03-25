@@ -1,0 +1,10 @@
+<view wx:if="{{!loading}}">
+  <video wx:if="{{ detail.is_play }}" src='{{"https://www.koocv.com/h5-view/v/movie/play/url="+ detail.play_url }}'></video>
+  <view>
+    {{ detail.title }}
+  </view>
+  <view>又名:{{detail.aka}}</view>
+  <view>{{ detail.genres }}/{{ detail.countries[0] }}</view>
+  <view>{{ detail.summary }}</view>
+  <view>{{detail.rating.servage}}</view>
+</view>
